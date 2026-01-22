@@ -5,20 +5,20 @@
 class Tr2rl < Formula
   desc "Turn messy text lists, ASCII trees, and indented outlines into real project/directory structures instantly into desired path."
   homepage "https://github.com/cytificlabs/tr2rl"
-  version "1.1.11"
+  version "1.1.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.11/tr2rl_1.1.11_Darwin_x86_64.tar.gz"
-      sha256 "0b7375373bdafa915b432c34864b8f54c3db99388befdef56458c441fc7c627b"
+      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.15/tr2rl_1.1.15_Darwin_x86_64.tar.gz"
+      sha256 "7882bc3bb51947c9bfc349b9261d960ca2b02a4a1e2f0e7888d186f1fd686a45"
 
       def install
         bin.install "tr2rl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.11/tr2rl_1.1.11_Darwin_arm64.tar.gz"
-      sha256 "65d1630069b06806f843163875b31a7d720179ac3444c34095c7e00dc517e4a1"
+      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.15/tr2rl_1.1.15_Darwin_arm64.tar.gz"
+      sha256 "6d9ddda08687fa9617ae1990136f332ab9127f59da4ec431fd51b8c41297ccc4"
 
       def install
         bin.install "tr2rl"
@@ -28,15 +28,15 @@ class Tr2rl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.11/tr2rl_1.1.11_Linux_x86_64.tar.gz"
-      sha256 "caa25df0611c3ae1f27d60457c58f0076bf46c680ea1a817143672089ead24e4"
+      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.15/tr2rl_1.1.15_Linux_x86_64.tar.gz"
+      sha256 "dce5bfbe60224c81a0c4349a9c577fda6bd9f40a51954327f89fa4daa32a99d6"
       def install
         bin.install "tr2rl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.11/tr2rl_1.1.11_Linux_arm64.tar.gz"
-      sha256 "e230fbb4978dbc424121c76d75a5eeaf72d7252686877d0e4440793010d7f12c"
+      url "https://github.com/cytificlabs/tr2rl/releases/download/v1.1.15/tr2rl_1.1.15_Linux_arm64.tar.gz"
+      sha256 "407fb3ea975a254d2ccb8d8714192a96c7ddec09d0cf77f5533d3150b7047041"
       def install
         bin.install "tr2rl"
       end
